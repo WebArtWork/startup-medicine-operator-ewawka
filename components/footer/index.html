@@ -1,0 +1,87 @@
+<div class="footer">
+	<div class="container">
+		<div class="footer__list">
+			<div class="footer__wrap footer__wrap--first">
+				<a href="">
+					<img src="/template/img/logo.png" alt="" />
+				</a>
+				<div class="footer__text">
+					{{{translate("Land.Discover the powerful magic of medicine with Ewawka, your one-stop platform for all aspects of your health and medical needs. Our Ewawka brand offers comprehensive solutions for all your medical needs. Whether you're seeking a doctor's consultation, planning a medical procedure, or needing to improve your health, Ewawka can help you take the first step to better health. We also offer a wide range of services to help you maintain and improve your health so you can live life to the fullest. With Ewawka, you will have access to highly qualified medical professionals who are always ready to help you. We believe that health is the greatest treasure, and with Ewawka you can find answers to all your medical questions. Learn more about our team and how Ewawka can facilitate your journey to better health. Experience your own changes to protect your most valuable asset - your health - with Ewawka today!")}}}
+				</div>
+			</div>
+			<div class="footer__list-wrap footer__wrap">
+				<div class="footer__item">
+					<a class="footer__links-title" href="https://neryxomka.com">{{{translate("Land.Ewawka")}}}</a>
+					<a href="/plan" class="footer__link">{{{translate("Land.Business Plan")}}}</a>
+					<a href="/wiki" class="footer__link">{{{translate("Land.Wiki")}}}</a>
+					<a href="/team" class="footer__link">{{{translate("Land.Who we are")}}}</a>
+				</div>
+				<div class="footer__item">
+					<a class="footer__links-title" href="/products">{{{translate("Land.Products")}}}</a>
+					<a href="/products" class="footer__link">{{{translate("Land.Tables")}}}</a>
+					<a href="/products" class="footer__link">{{{translate("Land.Kitchen")}}}</a>
+				</div>
+				<div class="footer__item">
+					<a class="footer__links-title" href="/services">{{{translate("Land.Services")}}}</a>
+					<a href="/services" class="footer__link">{{{translate("Land.Custom Tables")}}}</a>
+					<a href="/services" class="footer__link">{{{translate("Land.Custom Kitchen")}}}</a>
+				</div>
+				<div class="footer__item">
+					<a class="footer__links-title" href="/articles">{{{translate("Land.Articles")}}}</a>
+					<a href="/articles" class="footer__link">{{{translate("Land.New Kitchen Designs")}}}</a>
+					<a href="/articles" class="footer__link">{{{translate("Land.New Tables Designs")}}}</a>
+				</div>
+				<div class="footer__item">
+					<h3 class="footer__links-title">{{{translate("Land.Languages")}}}</h3>
+					<button class="footer__link" onclick="selectLanguage('en')">
+						English
+					</button>
+					<button class="footer__link" onclick="selectLanguage('ua')">
+						Українська
+					</button>
+				</div>
+			</div>
+			<div class="footer__wrap footer__wrap--last">
+				<div class="footer__wrap-socials">
+					<!-- <a href="" class="footer__btn btn">
+						<img src="/template/img/icons/v.svg" alt="" />
+					</a> -->
+					<a href="tel:+380960786786714" class="footer__btn btn">
+						<img src="/template/img/icons/viber.svg" alt="" />
+					</a>
+					<a href="https://t.me/neryxomka_news" target="_blank" class="footer__btn btn">
+						<img src="/template/img/icons/tg.svg" alt="" />
+					</a>
+					<a href="https://twitter.com/neryxomka" target="_blank" class="footer__btn btn">
+						<img src="/template/img/icons/twit.svg" alt="" />
+					</a>
+					<a href="https://www.facebook.com/profile.php?id=100090910920539" class="footer__btn btn">
+						<img src="/template/img/icons/face.svg" alt="" />
+					</a>
+					<a href="https://instagram.com/neryxomka?igshid=YmMyMTA2M2Y=" target="_blank" class="footer__btn btn">
+						<img src="/template/img/icons/inst.svg" alt="" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	function selectLanguage(lang) {
+		fetch("/api/user/lang/" + lang, {
+			method: "GET",
+			headers: {
+				"Content-Type": "application/json",
+			},
+		})
+			.then((response) => response.json())
+			.then((data) => {
+				window.scrollTo(0, 0);
+
+				location.reload();
+			})
+			.catch((error) => {
+				console.error("Error:", error);
+			});
+	}
+</script>

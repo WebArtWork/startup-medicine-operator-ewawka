@@ -1,0 +1,170 @@
+<div class="wrapper">
+	<div class="content">
+		<div class="header__top">
+			{% if showLayout %}
+			{{{'/templates/template/components/topbar'|c({translate: translate})|safe}}}
+			{% endif %}
+			<section class="article">
+				<div class="container">
+					<div class="article__wrap">
+						<div class="article__img">
+							<img src="/template/img/articles.png" alt="" />
+						</div>
+						<div class="article__title">
+							{{{translate("Plan.Introducing the Body")}}}
+						</div>
+						<div class="article__description">
+							<p>
+								{{{translate("Plan.Welcome to our cutting-edge Body platform - a unique solution for everyone who wants to provide their body with the best care and support. We understand how important it is to have access to the best professionals and resources to achieve your ideal state of physical well-being.")}}}
+							</p>
+						</div>
+						<div class="article__wrapper-list">
+
+							<div class="article__wrapper-wrap">
+								<div class="article__wrapper-item">
+									<div class="article__wrapper-img">
+										1
+									</div>
+									<div class="article__wrapper-text">
+										<h3>{{{translate("Plan.Personal specialists and consultants")}}}</h3>
+										<p>
+											{{{translate("Plan.Find your personal trainer, physical therapist or nutritionist to help you achieve your fitness goals. Our platform provides easy access to qualified experts ready to support you every step of the way.")}}}
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="article__wrapper-wrap">
+								<div class="article__wrapper-item">
+									<div class="article__wrapper-img">
+										2
+									</div>
+									<div class="article__wrapper-text">
+										<h3>{{{translate("Plan.A wide selection of suitable programs")}}}</h3>
+										<p>
+											{{{translate("Plan.Choose the optimal fitness program, diet or special plan to achieve your goal. We offer an individual approach that takes into account your personal needs and limitations.")}}}
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="article__wrapper-wrap">
+								<div class="article__wrapper-item">
+									<div class="article__wrapper-img">
+										3
+									</div>
+									<div class="article__wrapper-text">
+										<h3>{{{translate("Plan.Selection of products for your health")}}}</h3>
+										<p>
+											{{{translate("Plan.Find the best nutritional supplements, beauty products and other products to support your physical well-being. Our selected range ensures that you will receive high quality products from reliable manufacturers.")}}}
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="article__wrapper-wrap">
+								<div class="article__wrapper-item">
+									<div class="article__wrapper-img">
+										4
+									</div>
+									<div class="article__wrapper-text">
+										<h3>{{{translate("Plan.Convenient search for specialists")}}}</h3>
+										<p>
+											{{{translate("Plan.Easily find and connect with experts through our interactive platform. Save your time by finding the right specialists directly on our website.")}}}
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="article__wrapper-wrap">
+								<div class="article__wrapper-item">
+									<div class="article__wrapper-img">
+										5
+									</div>
+									<div class="article__wrapper-text">
+										<h3>{{{translate("Plan.Preparation for events and important moments")}}}</h3>
+										<p>
+											{{{translate("Plan.Prepare your body for important events, whether it's a wedding, a competition or just a summer vacation. Our experts will help you optimize the preparation process and achieve the best results.")}}}
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="article__wrapper-wrap">
+								<div class="article__wrapper-item">
+									<div class="article__wrapper-img">
+										6
+									</div>
+									<div class="article__wrapper-text">
+										<h3>{{{translate("Plan.Convenient accounting and monitoring")}}}</h3>
+										<p>
+											{{{translate("Plan.Keep track of your achievements, records and history of cooperation with specialists. Keep detailed records of your journey to health and well-being.")}}}
+										</p>
+									</div>
+								</div>
+							</div>
+
+							
+						</div>
+						<div class="article__description">
+
+							<p>
+								{{{translate("Plan.Join our platform today and experience all the benefits of Body - an innovative tool for your physical self-improvement. Allow yourself to discover a new level of care for your body. Sign up now and start your journey to better physical well-being!")}}}
+							</p>
+
+							<h2>{{{translate("Plan.Introducing Our Exciting Investment Plans")}}}</h2>
+
+							<div class="article__counter-list">
+
+								<div class="article__counter-wrap">
+									<div class="article__counter-item">
+										<div class="article__counter-img">
+											1
+										</div>
+										<div class="article__counter-text">
+											<h3>{{{translate("Plan.Become part of our community")}}}</h3>
+											<p>{{{translate("Plan.This opportunity is valid until the official launch of the platform.")}}}</p>
+											<span>
+												{{{translate("Plan.Invest $100,000 and acquire a 10% stake in our platform. By choosing this option, you'll not only become an integral part of our success but also enjoy a share of our future profits.")}}}
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="article__counter-wrap">
+									<div class="article__counter-item">
+										<div class="article__counter-img">
+											2
+										</div>
+										<div class="article__counter-text">
+											<h3>{{{translate("Plan.Enjoy constant access")}}}</h3>
+											<p>{{{translate("Plan.This opportunity is valid until the official launch of the platform.")}}}</p>
+											<span>
+												{{{translate("Plan.Deposit $1000 and enjoy free and unlimited access to our platform for life. This option is ideal for those who want to get the most out of our innovative approach to self-care without having to worry about recurring costs.")}}}
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="article__counter-wrap">
+									<div class="article__counter-item">
+										<div class="article__counter-img">
+											3
+										</div>
+										<div class="article__counter-text">
+											<h3>{{{translate("Plan.Support our mission")}}}</h3>
+											<p>{{{translate("Plan.Invest any amount that inspires you in our incredible team. Your support will help us constantly develop and improve our platform, providing the best experience for everyone who wants to improve their physical well-being. Join us to change the approach to health and well-being together!")}}}</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	{% if showLayout %}
+	{{{'/template/components/footer'|c({translate: translate})|safe}}}
+	{% endif %}
+</div>

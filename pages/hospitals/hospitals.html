@@ -1,0 +1,61 @@
+<div class="wrapper">
+	<div class="content">
+		<div class="header__top header__top">
+			{{{'/templates/template/components/topbar'|c({translate: translate})|safe}}}
+			<section class="main-screen">
+				<div class="container">
+					<div class="main__wrap">
+						<div class="main__sidebar-burger-wrap">
+							<div class="main__sidebar-burger">
+
+							</div>
+						</div>
+						{{{'/template/components/sidebar'|c({categories: categories, module: 'realestates'})|safe}}}
+						<div class="main__content">
+							<div class="product__list p-top">
+								{% for realestate in realestates %}
+								<div class="product__wrap">
+									<div class="product__item">
+										<div class="product__img">
+											<img src="{{{realestate.thumb}}}" alt="">
+										</div>
+										<div class="product__title">
+											{{{realestate.name}}}
+										</div>
+										<pre class="product__description">{{{realestate.short}}}</pre>
+										<!-- <div class="product__area-wrap">
+											<div class="product__area-img">
+												<img src="/template/img/icons/area.svg" alt="">
+											</div>
+											<div class="product__area-text">
+												1212.21312312КМ2
+											</div>
+										</div>
+										-->
+										<div class="product__btn-wrap">
+											<a href="/realestate/{{{realestate.id}}}"  class="product__btn-heart product__btn-heart--first">
+												<span>OPEN</span>
+											</a>
+											<a href="" class="product__btn-heart product__btn-heart--second">
+												<img src="/template/img/icons/cart.svg" alt="" />
+											</a>
+											<a href="" class="product__btn-heart">
+												<img src="/template/img/icons/heart.svg" alt="" />
+											</a>
+										</div>
+									</div>
+								</div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+					<!-- <div class="articles__switch btn">
+						see more
+					</div> -->
+				</div>
+			</section>
+		</div>
+
+	</div>
+	{{{'/template/components/footer'|c({translate: translate})|safe}}}
+</div>
